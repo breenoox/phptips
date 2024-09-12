@@ -1,0 +1,17 @@
+{
+    "name": "breno-barbosa/ep02",
+    "autoload": {
+        "psr-4": {
+            "BrenoBarbosa\\Ep02\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Breno",
+            "email": "breno.barbosa@auditto.online"
+        }
+    ],
+    "require": {
+        "coffeecode/datalayer": "1.1.*"
+    }
+}

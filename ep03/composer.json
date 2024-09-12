@@ -1,0 +1,21 @@
+{
+    "name": "root/ep03",
+    "authors": [
+        {
+            "name": "Breno",
+            "email": "breno.barbosa@auditto.online"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/"
+        },
+        "files": [
+            "source/Config.php"
+        ]
+    },
+    "require": {
+        "coffeecode/datalayer": "1.1.*",
+        "phpmailer/phpmailer": "6.0.*"
+    }
+}

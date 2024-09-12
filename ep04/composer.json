@@ -1,0 +1,17 @@
+{
+    "name": "root/ep04",
+    "autoload": {
+        "psr-4": {
+            "Root\\Ep04\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Breno",
+            "email": "breno.barbosa@auditto.online"
+        }
+    ],
+    "require": {
+        "coffeecode/datalayer": "1.1.*"
+    }
+}

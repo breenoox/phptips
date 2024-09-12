@@ -1,8 +1,8 @@
 {
-    "name": "root/ep04",
+    "name": "breno-barbosa/ep04",
     "autoload": {
         "psr-4": {
-            "Root\\Ep04\\": "src/"
+            "BrenoBarbosa\\Ep04\\": "src/"
         }
     },
     "authors": [
@@ -12,6 +12,6 @@
         }
     ],
     "require": {
-        "coffeecode/datalayer": "1.1.*"
+        "coffeecode/router": "1.0.*"
     }
 }

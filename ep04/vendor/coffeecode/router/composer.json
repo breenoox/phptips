@@ -1,15 +1,12 @@
 {
-  "name": "coffeecode/datalayer",
-  "description": "The data layer is a persistent abstraction component of your database that PDO",
+  "name": "coffeecode/router",
+  "description": "A classic CoffeeCode Router is easy, fast and extremely uncomplicated. Create and manage your routes in minutes!",
   "keywords": [
     "CoffeeCode",
     "UpInside",
-    "Database",
-    "PDO",
-    "Save",
-    "Delete",
-    "Destroy",
-    "CRUD"
+    "Router",
+    "Route",
+    "Routes"
   ],
   "homepage": "http://www.upinside.com.br",
   "license": "MIT",
@@ -21,12 +18,11 @@
     }
   ],
   "require": {
-    "php": ">=7.2",
-    "ext-pdo": "*"
+    "php": ">=7.2"
   },
   "autoload": {
     "psr-4": {
-      "CoffeeCode\\DataLayer\\": "src"
+      "CoffeeCode\\Router\\": "src"
     }
   }
 }

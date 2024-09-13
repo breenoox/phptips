@@ -3,7 +3,7 @@
         'name' => 'breno-barbosa/ep04',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '93744726b1822f639d72e847336dd7a24b9edac2',
+        'reference' => 'a39108c072d5abe036c2efeea887cedccd6b06c1',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'breno-barbosa/ep04' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '93744726b1822f639d72e847336dd7a24b9edac2',
+            'reference' => 'a39108c072d5abe036c2efeea887cedccd6b06c1',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

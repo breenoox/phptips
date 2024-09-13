@@ -1,0 +1,19 @@
+{
+    "name": "breno_barbosa/ep05",
+    "autoload": {
+        "psr-4": {
+            "BrenoBarbosa\\Ep05\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Breno Barbosa",
+            "email": "breno.barbosa@auditto.online"
+        }
+    ],
+    "require": {
+        "fakerphp/faker": "1.20",
+        "coffeecode/datalayer": "1.1.*",
+        "coffeecode/paginator": "1.0.*"
+    }
+}

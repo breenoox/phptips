@@ -1,0 +1,17 @@
+{
+    "name": "humbe/ep06",
+    "autoload": {
+        "psr-4": {
+            "Humbe\\Ep06\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "breenoox",
+            "email": "106892141+breenoox@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "league/oauth2-facebook": "2.0.*"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "breno_barbosa/ep13",
+    "autoload": {
+        "psr-4": {
+            "BrenoBarbosa\\Ep13\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Breno Barbosa",
+            "email": "breno.barbosa@auditto.online"
+        }
+    ],
+    "require": {
+        "coffeecode/router": "1.0.*",
+        "coffeecode/datalayer": "1.1.*",
+        "league/plates": "v3.0"
+    }
+}

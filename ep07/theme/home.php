@@ -1,4 +1,5 @@
 <?php $v->layout("_theme") ?>
+
 <div class="users">
     <?php if($users): 
     foreach($users as $user):

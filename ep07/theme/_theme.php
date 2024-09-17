@@ -26,6 +26,8 @@
     <footer class="main_footer">
             <?= SITE; ?> - TODOS OS DIREITOS RESERVADOS
     </footer>
-    
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <?= $v->section("scripts"); ?>
 </body>
 </html>

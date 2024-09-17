@@ -21,7 +21,7 @@ class Web
 
         
         echo $this->view->render("home", [
-            "title" => "home | ". SITE,
+            "title" => "Home | ". SITE,
             "users" => $users
         ]);;
     }
@@ -33,6 +33,9 @@ class Web
 
     public function error(array $data): void 
     {
-        
+        echo $this->view->render("error", [
+            "title" => "Error {$data['errcode']} | ". SITE,
+            "error" => $data['errcode']
+        ]);;
     }
 }

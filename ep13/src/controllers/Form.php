@@ -16,7 +16,7 @@ class Form
 
     public function home() : void
     {
-        $users = (new User())->find()->fetch(true);
+        $users = (new User())->find()->order('first_name')->fetch(true);
         
         echo $this->view->render("home", [
             "users" => $users
@@ -25,13 +25,38 @@ class Form
     
     public function create(array $data) : void
     {
-        $callback["data"] = $data;
-        echo json_encode($data);
+        $userData = filter_var_array($data);
+
+        if (in_array("", $userData)) {
+            $callback["message"] = message("informe o nome e o sobrenome", "error");
+            echo json_encode($callback);
+            return;
+        }
+
+        $user = new User();
+        $user->first_name = $userData["first_name"];
+        $user->last_name = $userData["last_name"];        
+        $user->save();
+        
+        $callback["message"] = message("Usuário cadastrado com sucesso", "success");
+        $callback["user"] = $this->view->render("user", ["user" => $user]);
+
+        echo json_encode($callback);
     }
 
     public function delete(array $data) : void
     {
-        $callback["data"] = $data;
-        echo json_encode($data);
+        if(empty($data['id'])){
+            return;
+        }
+
+        $id = filter_var($data['id'], FILTER_VALIDATE_INT);
+        $user = (new User())->findById($id);
+        if ($user) {
+            $user->destroy();
+        }
+
+        $callback = true;
+        echo json_decode($callback);
     } 
 }

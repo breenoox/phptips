@@ -14,7 +14,7 @@ $router->namespace("src\controllers");
 $router->group(null);
 $router->get("/", "Form:home", "form.home");
 $router->post("/create", "Form:create", "form.create");
-$router->get("/delete", "Form:delete", "form.delete");
+$router->post("/delete", "Form:delete", "form.delete");
 
 $router->dispatch();
 
